@@ -1,0 +1,17 @@
+name: "Auto ML Classifier Action"
+description: "Building A Classifier Model"
+author: "Amir Valeev"
+inputs:
+  myInput:
+    description: "Provide Inputs For Model Classification"
+    required: true
+    default: "zeroinputs"
+outputs:
+  myOutput:
+    description: "Output from the action"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: 'box'
+  color: 'blue'
